@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -56,6 +56,9 @@ img {
 
 }
 
+.navbar a.active{
+  border-bottom: 2px #fff solid;
+}
 .navbar a{
   color: #fff;
   padding: 10px;
@@ -381,8 +384,118 @@ img {
 .calendar h2{
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: normal;
   padding: 30px;
+}
+
+/* About page*/ 
+
+.about-head{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* People Page*/
+/*
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+/*}
+
+/* This container is needed to position the front and back side */
+/*.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/*.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
+
+/* Position the front and back side */
+/*.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+*/
+/* Style the front side (fallback if image is missing) */
+/*.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}*/
+
+/* Style the back side */
+/*.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}*/
+
+/*.margin{
+  margin: 100% 0;
+}
+
+.parallax {
+  background-image: url("https://secure.img1-fg.wfcdn.com/im/02337269/resize-h800%5Ecompr-r85/5380/53804983/Elswick+Lumber+Wood+33%2527+L+x+20.5%2522+W+Wallpaper+Roll.jpg")
+  repeat fixed 100%;
+
+}*/
+ /* height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+/*.parallax-inner{
+  padding-top: 30%
+  padding-bottom: 30%;
+
+}*/
+
+.parallax {
+  /* The image used */
+  background-image: url("img/back.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
