@@ -74,6 +74,10 @@ img {
     justify-content: space-between;
 }
 
+.hidden{
+  visibility: hidden;
+  height: 0;
+}
 
 
 /* hero */
