@@ -1,8 +1,7 @@
-
+/* general */
 :root{
 
-/*  --primary-color: #C09FA7;
-*/  --primary-color: #674243;
+ --primary-color: #674243;
 
 }
 
@@ -43,20 +42,120 @@ img {
 }
 
 
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.card{
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border:none;
+  border-radius: 5px;
+}
+
+.btn-outline{
+  background-color: transparent;
+  border: 1px #E2DEE7 solid;
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover, .btn:hover{
+  transform: scale(0.98);
+}
+
+
+.bg-primary, btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.text-center{
+  text-align: center;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  transform: scale(0.98);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.skip-link {
+  background: #fff;
+  color: var(--primary-color);
+  padding: 10px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
 
 
 /* navbar */
 .navbar{
   background-color: var(--primary-color);
   color: #fff;
-  height: 70 px;
+  height: 70px;
 }
 
 .navbar ul{
   display: flex;
 
 }
-
 
 .navbar a{
   color: #fff;
@@ -88,7 +187,6 @@ img {
   -webkit-text-stroke: 0.3vw #674243;
   text-transform: uppercase;
 
-
 }
 
 .navbar h1::before{
@@ -117,6 +215,7 @@ img {
     width: 100%;
   }
 }
+
 
 /* hero */
 .hero{
@@ -180,11 +279,11 @@ img {
 }
 
 
+
 /* skills */
 .skills{
   padding-top: 100px;
 }
-
 
 .skills-heading{
   max-width: 500px;
@@ -206,6 +305,8 @@ img {
   font-weight: bold;
 }
 
+
+
 /* main */
 .main .grid{
   grid-template-columns: 4fr 3fr;
@@ -223,108 +324,6 @@ img {
 }
 
 
-/* general */
-.container{
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
-.card{
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  padding: 20px;
-  margin: 10px;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
-  border:none;
-  border-radius: 5px;
-}
-
-.btn-outline{
-  background-color: transparent;
-  border: 1px #E2DEE7 solid;
-}
-
-.btn-primary{
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px 30px;
-  cursor: pointer;
-  border:none;
-  border-radius: 5px;
-}
-
-.btn-primary:hover, .btn:hover{
-  transform: scale(0.98);
-}
-
-/* Backgrounds & colored*/
-.bg-primary, btn-primary{
-  background-color: var(--primary-color);
-  color: #fff;
-}
-.text-center{
-  text-align: center;
-}
-
-
-.flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-  background: #fff;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn:hover{
-  transform: scale(0.98);
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid-3{
-  grid-template-columns: repeat(3, 1fr);
-}
-
-
-.skip-link {
-  background: #fff;
-  color: var(--primary-color);
-  padding: 10px;
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-}
-
-.skip-link:focus {
-  transform: translateY(0%);
-}
 
 /* Margin */
 .my-1{
@@ -412,7 +411,6 @@ img {
 
 
 /* Contact Page */
-
 .img{
   width: 300px;
   height: 300px;
@@ -440,8 +438,9 @@ img {
   padding: 30px;
 }
 
-/* About page*/ 
 
+
+/* About page*/ 
 .about-head{
   font-size: 30px;
   text-align: center;
@@ -466,88 +465,18 @@ img {
 }
 
 
-/* People Page*/
-/*
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-/*}
+/* People Page */
 
-/* This container is needed to position the front and back side */
-/*.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/*.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}*/
 
-/* Position the front and back side */
-/*.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
-*/
-/* Style the front side (fallback if image is missing) */
-/*.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}*/
 
-/* Style the back side */
-/*.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}*/
 
-/*.margin{
-  margin: 100% 0;
-}
 
-.parallax {
-  background-image: url("https://secure.img1-fg.wfcdn.com/im/02337269/resize-h800%5Ecompr-r85/5380/53804983/Elswick+Lumber+Wood+33%2527+L+x+20.5%2522+W+Wallpaper+Roll.jpg")
-  repeat fixed 100%;
 
-}*/
- /* height: 100%;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-/*.parallax-inner{
-  padding-top: 30%
-  padding-bottom: 30%;
 
-}*/
 
-.parallax {
-  /* The image used */
-  background-image: url("img/back.jpg");
 
-  /* Set a specific height */
-  min-height: 500px; 
-  
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 /* Footer */
