@@ -1,10 +1,8 @@
 
 :root{
 
-  --primary-color: #C09FA7;
-  --secondary-color:;
-  --dark-color:;
-  --light-color:;
+/*  --primary-color: #C09FA7;
+*/  --primary-color: #674243;
 
 }
 
@@ -56,9 +54,7 @@ img {
 
 }
 
-.navbar a.active{
-  border-bottom: 2px #fff solid;
-}
+
 .navbar a{
   color: #fff;
   padding: 10px;
@@ -66,8 +62,12 @@ img {
   font-size: 20px;
 }
 
+.navbar a.active{
+  border: 2px #fff solid;
+}
+
 .navbar a:hover{
-  border-bottom: 2px #fff solid;
+  border-bottom: 3px #fff solid;
 }
 
 .navbar .flex{
@@ -131,6 +131,14 @@ img {
   outline: none;
 }
 
+.sr-only{
+   position:absolute;
+   left:-10000px;
+   top:auto;
+   width:1px;
+   height:1px;
+   overflow:hidden;
+}
 
 
 /* skills */
