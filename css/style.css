@@ -186,6 +186,7 @@ img {
   font-style: italic;
   -webkit-text-stroke: 0.3vw #674243;
   text-transform: uppercase;
+  letter-spacing:2px;
 
 }
 
@@ -216,6 +217,23 @@ img {
   }
 }
 
+/* main */
+.main .grid{
+  grid-template-columns: 4fr 3fr;
+}
+
+.lead h2{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.lead p{
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/*Home Page*/
 
 /* hero */
 .hero{
@@ -307,21 +325,6 @@ img {
 
 
 
-/* main */
-.main .grid{
-  grid-template-columns: 4fr 3fr;
-}
-
-.lead h2{
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-
-.lead p{
-  font-size: 20px;
-  text-align: left;
-  padding-bottom: 20px;
-}
 
 
 
@@ -468,6 +471,70 @@ img {
 /* People Page */
 
 
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url("../img/places.jpg");
+  min-height:400px;
+}
+
+.pimg2{
+  background-image:url("../img/syria.jpg");
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url("../img/kualalumpur.jpg");
+  min-height:400px;
+}
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#fff;
+  color:#666;
+}
+
+.section-dark{
+  background-color: var(--primary-color);
+  color:#ddd;
+}
+
+/*.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:40px;
+  letter-spacing:4px;
+  text-transform:capitalize;
+}
+*/
+/*
+.ptext .border{
+  background-color: #111;
+  color: #fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  /*background-color:transparent;*/
+  /*background-color: #111;
+  color: #fff;
+
+}*/
 
 
 
