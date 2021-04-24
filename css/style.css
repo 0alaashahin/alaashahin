@@ -588,6 +588,12 @@ input{
     fieldset{
       margin-left: 10px;
     }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
 }
 
 /* Mobile */
@@ -612,6 +618,11 @@ input{
    .grid-3 {
     grid-template-columns: 2fr;
     text-align: center;
+  }
+
+   .column {
+    flex: 100%;
+    max-width: 100%;
   }
 
 }
