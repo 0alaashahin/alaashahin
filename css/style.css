@@ -626,3 +626,11 @@ input{
   }
 
 }
+
+/*prefers-reduced-motion: reduce*/
+@media screen and (prefers-reduced-motion: reduce){
+
+  .navbar h1::before {
+    animation: none;
+  }
+}
